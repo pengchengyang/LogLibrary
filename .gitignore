@@ -1,0 +1,28 @@
+# 忽略 Visual Studio 的 IDE 文件
+.vs/
+*.suo
+*.user
+*.VC.db
+*.opensdf
+*.sdf
+
+# 忽略 Debug 和 Release 编译输出目录
+Debug/
+debug/
+Release/
+release/
+
+# 忽略中间文件
+*.obj
+*.log
+*.pch
+*.pdb
+*.ilk
+
+# 忽略生成的可执行文件
+*.exe
+*.dll
+*.lib
+
+# 忽略 CMake 生成目录（如果你用了）
+build/

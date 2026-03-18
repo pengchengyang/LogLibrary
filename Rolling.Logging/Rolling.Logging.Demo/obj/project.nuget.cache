@@ -1,0 +1,29 @@
+{
+  "version": 2,
+  "dgSpecHash": "/sZjHAfWGVI=",
+  "success": true,
+  "projectFilePath": "D:\\Codes\\Rolling.Logging\\Rolling.Logging.Demo\\Rolling.Logging.Demo.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\admin\\.nuget\\packages\\microsoft.extensions.configuration\\10.0.0\\microsoft.extensions.configuration.10.0.0.nupkg.sha512",
+    "C:\\Users\\admin\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\10.0.0\\microsoft.extensions.configuration.abstractions.10.0.0.nupkg.sha512",
+    "C:\\Users\\admin\\.nuget\\packages\\microsoft.extensions.configuration.binder\\10.0.0\\microsoft.extensions.configuration.binder.10.0.0.nupkg.sha512",
+    "C:\\Users\\admin\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\10.0.5\\microsoft.extensions.dependencyinjection.10.0.5.nupkg.sha512",
+    "C:\\Users\\admin\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\10.0.5\\microsoft.extensions.dependencyinjection.abstractions.10.0.5.nupkg.sha512",
+    "C:\\Users\\admin\\.nuget\\packages\\microsoft.extensions.dependencymodel\\10.0.0\\microsoft.extensions.dependencymodel.10.0.0.nupkg.sha512",
+    "C:\\Users\\admin\\.nuget\\packages\\microsoft.extensions.logging\\10.0.5\\microsoft.extensions.logging.10.0.5.nupkg.sha512",
+    "C:\\Users\\admin\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\10.0.5\\microsoft.extensions.logging.abstractions.10.0.5.nupkg.sha512",
+    "C:\\Users\\admin\\.nuget\\packages\\microsoft.extensions.options\\10.0.5\\microsoft.extensions.options.10.0.5.nupkg.sha512",
+    "C:\\Users\\admin\\.nuget\\packages\\microsoft.extensions.primitives\\10.0.5\\microsoft.extensions.primitives.10.0.5.nupkg.sha512",
+    "C:\\Users\\admin\\.nuget\\packages\\serilog\\4.3.1\\serilog.4.3.1.nupkg.sha512",
+    "C:\\Users\\admin\\.nuget\\packages\\serilog.enrichers.environment\\3.0.1\\serilog.enrichers.environment.3.0.1.nupkg.sha512",
+    "C:\\Users\\admin\\.nuget\\packages\\serilog.extensions.logging\\10.0.0\\serilog.extensions.logging.10.0.0.nupkg.sha512",
+    "C:\\Users\\admin\\.nuget\\packages\\serilog.settings.configuration\\10.0.0\\serilog.settings.configuration.10.0.0.nupkg.sha512",
+    "C:\\Users\\admin\\.nuget\\packages\\serilog.sinks.console\\6.1.1\\serilog.sinks.console.6.1.1.nupkg.sha512",
+    "C:\\Users\\admin\\.nuget\\packages\\serilog.sinks.file\\7.0.0\\serilog.sinks.file.7.0.0.nupkg.sha512",
+    "C:\\Users\\admin\\.nuget\\packages\\system.diagnostics.diagnosticsource\\10.0.5\\system.diagnostics.diagnosticsource.10.0.5.nupkg.sha512",
+    "C:\\Users\\admin\\.nuget\\packages\\system.io.pipelines\\10.0.0\\system.io.pipelines.10.0.0.nupkg.sha512",
+    "C:\\Users\\admin\\.nuget\\packages\\system.text.encodings.web\\10.0.0\\system.text.encodings.web.10.0.0.nupkg.sha512",
+    "C:\\Users\\admin\\.nuget\\packages\\system.text.json\\10.0.0\\system.text.json.10.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}
