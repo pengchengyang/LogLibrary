@@ -30,11 +30,10 @@ namespace Rolling.Logging.Demo
                 {
                     MinimumLevel = LogEventLevel.Debug,
                     LogFilePath = "./Logs/Rolling-Demo-Test.log",
-                    OutputTemplate = "[Rolling-{Timestamp:yyyy-MM-dd HH:mm:ss.fff}][{Level:u3}][{SourceContext}] {Message:lj}{NewLine}{Exception}",
                     FileSizeLimitBytes = 1024 * 1024 * 10,
                     RetainedFileCountLimit = 5,
                     EnableConsole = true,
-                    EnableFile = true
+                    EnableFile = true,
                 };
                 RollingLogger.Initialize(customOptions);
 
@@ -51,6 +50,13 @@ namespace Rolling.Logging.Demo
                 loggerInstance.Info("Program.Main", "这是带上下文的Info日志（上下文：Program.Main）");
                 loggerInstance.Debug("Program.Main", "调试上下文日志：{Action}", "测试实例化");
                 Console.WriteLine("→ 日志中会显示 [SourceContext] = Program.Main\n");
+                Thread.Sleep(1000);
+
+                Console.WriteLine("[测试3] 实例化日志（带SourceContext，便于定位2）");
+                var loggerInstance2 = new RollingLogger(customOptions);
+                loggerInstance2.Info("Program.Main", "这是带上下文的Info日志（上下文：Program.Main2）");
+                loggerInstance2.Debug("Program.Main", "调试上下文日志：{Action}", "测试实例化2");
+                Console.WriteLine("→ 日志中会显示 [SourceContext] = Program.Main2\n");
                 Thread.Sleep(1000);
 
                 // --------------- 测试4：异常日志（带堆栈） ---------------

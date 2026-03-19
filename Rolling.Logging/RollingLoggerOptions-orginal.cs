@@ -40,21 +40,6 @@ namespace Rolling.Logging
         /// <summary>
         /// 日志格式模板（默认包含Rolling标识、时间、级别、消息等）
         /// </summary>
-        public string OutputTemplate { get; set; } =
-            "[Rolling-{Timestamp:yyyy-MM-dd HH:mm:ss.fff}][{Level:u3}][{SourceContext}][{CallerFile}:{CallerLineNumber}] {Message:lj}{NewLine}{Exception}";
-
-        /// <summary>
-        /// 是否在日志中记录调用文件名和行号（默认 Debug 开启，Release 关闭）
-        /// </summary>
-        public bool EnableCallerInfo { get; set; }
-
-        public RollingLoggerOptions()
-        {
-#if DEBUG
-            EnableCallerInfo = true;
-#else
-            EnableCallerInfo = false;
-#endif
-        }
+        public string OutputTemplate { get; set; } = "[Rolling-{Timestamp:yyyy-MM-dd HH:mm:ss.fff}][{Level:u3}][{SourceContext}] {Message:lj}{NewLine}{Exception}";
     }
 }

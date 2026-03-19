@@ -49,13 +49,9 @@ namespace Rolling.Logging
         {
             var loggerConfig = new LoggerConfiguration()
                 .MinimumLevel.Is(options.MinimumLevel)
+                // 丰富日志上下文（添加机器名/应用名）
                 .Enrich.WithMachineName()
                 .Enrich.WithEnvironmentUserName();
-
-            if (options.EnableCallerInfo)
-            {
-                loggerConfig.Enrich.With(new CallerEnricher());
-            }
 
             // 控制台输出
             if (options.EnableConsole)
@@ -65,7 +61,7 @@ namespace Rolling.Logging
                     restrictedToMinimumLevel: options.MinimumLevel);
             }
 
-            // 文件输出
+            // 文件输出（按大小滚动）
             if (options.EnableFile)
             {
                 loggerConfig.WriteTo.File(
@@ -74,10 +70,10 @@ namespace Rolling.Logging
                     restrictedToMinimumLevel: options.MinimumLevel,
                     fileSizeLimitBytes: options.FileSizeLimitBytes,
                     retainedFileCountLimit: options.RetainedFileCountLimit,
-                    rollingInterval: RollingInterval.Day,
-                    rollOnFileSizeLimit: true,
-                    shared: true,
-                    flushToDiskInterval: TimeSpan.FromSeconds(1));
+                    rollingInterval: RollingInterval.Day, // 按天滚动（可选：Minute/Hour/Day/Month）
+                    rollOnFileSizeLimit: true, // 达到大小限制时新建文件
+                    shared: true, // 多进程共享日志文件
+                    flushToDiskInterval: TimeSpan.FromSeconds(1)); // 1秒刷新到磁盘
             }
 
             return loggerConfig.CreateLogger();
